@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display&family=Roboto:wght@400;700&family=Sacramento&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #EEEEEE;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+@media (max-width: 1050px) {
+  body {
+    font-size: 1rem;
+  }
+}
+
+div {
+  width: 100%;
+  padding: 20px 5%;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 7rem;
+}
+
+@media (max-width: 1050px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 1050px) {
+  h3 {
+    font-size: 1.2rem;
+  }
+}
+
+ul {
+  list-style: none;
+  font-size: 1.2rem;
+}
+
+a {
+  color: #9D9D9D;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #D7E9F7;
+}
+
+.highlight {
+  color: black;
+  font-size: 10rem;
+  text-shadow: 1px 1px #EEEEEE;
+}
+
+@media (max-width: 1050px) {
+  .highlight {
+    font-size: 3rem;
+  }
+}
+
+.introduction {
+  height: 20%;
+  color: #D7E9F7;
+  text-align: center;
+  background-color: #393E46;
+}
+
+.grid-3 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (max-width: 1050px) {
+  .grid-3 {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+}
+
+.grid-2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 0 100px;
+}
+
+@media (max-width: 1050px) {
+  .grid-2 {
+    display: block;
+    grid-gap: 0px;
+  }
+}
+
+.heading {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 / 4;
+  font-family: 'Noto Serif', serif;
+}
+
+.about-me {
+  background-color: #222831;
+}
+
+.about-me .signature {
+  font-family: 'Sacramento', cursive;
+  color: #9D9D9D;
+}
+
+.about-me .greeting {
+  font-family: 'Noto Serif', serif;
+  font-size: 4rem;
+}
+
+.about-me .profile-pic img {
+  width: 300px;
+  margin: auto;
+}
+
+.about-me .summary {
+  margin: auto;
+  text-align: left;
+}
+
+.skills {
+  background-color: #393E46;
+}
+
+.projects {
+  background-color: #222831;
+}
+
+.projects .appScreenShot {
+  width: 200px;
+  height: 200px;
+  margin: 30px;
+}
+
+.contact {
+  background-color: #393E46;
+}
+
+.contact .icon {
+  width: 50px;
+  margin: 0 20px;
+}
+
+.contact .icon:hover {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
+.footer {
+  background-color: black;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,135 @@
+@import './resets'; //import partial sass
+@import './var';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display&family=Roboto:wght@400;700&family=Sacramento&display=swap');
+@mixin mobile {
+    @media (max-width: $mobile) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: $tablet) {
+        @content;
+    }
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    color: $text-color;
+    text-align: center;
+    font-size: 1.4rem;
+    @include tablet{
+        font-size: 1rem;
+    }
+}
+div {
+    width: 100%;
+    padding: 20px 5%;
+}
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 7rem;
+    @include tablet{
+        font-size: 2rem;
+    }
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.5rem;
+    @include tablet{
+        font-size: 1.2rem;
+    }
+}
+ul {
+    list-style: none;
+    font-size: 1.2rem;
+}
+a {
+    color: $text-color2;
+    text-decoration: none;
+    &:hover {
+        color: $color3;
+    }
+}
+.highlight {
+    color: black;
+    font-size: 10rem;
+    text-shadow: 1px 1px $text-color;
+    @include tablet {
+        font-size: 3rem;
+    }
+}
+.introduction {
+    height: 20%;
+    color: $color3;
+    text-align: center;
+    background-color: $color1;
+}
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    @include tablet{
+    grid-template-columns: auto;
+    }
+}
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0 100px;
+    @include tablet{
+    display: block;
+    grid-gap: 0px;
+}
+}
+.heading {
+    grid-column: 1 / 4;
+    font-family: 'Noto Serif', serif;
+}
+.about-me {
+    background-color: $color2;
+    .signature {
+    font-family: 'Sacramento', cursive;
+    color: $text-color2;
+}
+    .greeting {
+    font-family: 'Noto Serif', serif;
+    font-size: 4rem;
+}
+    .profile-pic img {
+        width: 300px;
+        margin: auto;
+    }
+    .summary {
+    margin: auto;
+    text-align: left;
+}
+}
+
+.skills {
+    background-color: $color1;
+}
+.projects {
+    background-color: $color2;
+    .appScreenShot {
+    width: 200px;
+    height: 200px;
+    margin: 30px;
+    
+}
+}
+
+.contact {
+    background-color: $color1;
+    .icon {
+    width: 50px;
+    margin: 0 20px;
+    &:hover {
+        filter: invert(100%);
+    }
+}
+}
+
+.footer {
+    background-color: black;
+}
