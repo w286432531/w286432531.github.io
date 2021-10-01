@@ -6,12 +6,12 @@
         @content;
     }
 }
-
 @mixin tablet {
     @media (max-width: $tablet) {
         @content;
     }
 }
+
 body {
     font-family: 'Roboto', sans-serif;
     color: $text-color;
@@ -20,6 +20,7 @@ body {
     @include tablet{
         font-size: 1rem;
     }
+
 }
 div {
     width: 100%;
@@ -87,6 +88,8 @@ a {
     font-family: 'Noto Serif', serif;
 }
 .about-me {
+    //background-color: lighten($color2, 100%);
+    //color: darken($text-color, 100%);
     background-color: $color2;
     .signature {
     font-family: 'Sacramento', cursive;
@@ -108,7 +111,9 @@ a {
 
 .skills {
     background-color: $color1;
-    text-align: left;
+    & div {
+        text-align: left;
+    }
 }
 .projects {
     background-color: $color2;

@@ -144,6 +144,9 @@ a:hover {
 
 .skills {
   background-color: #393E46;
+}
+
+.skills div {
   text-align: left;
 }
 
