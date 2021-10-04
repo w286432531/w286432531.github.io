@@ -78,7 +78,6 @@ a:hover {
 .introduction {
   height: 20%;
   color: #D7E9F7;
-  text-align: center;
   background-color: #393E46;
 }
 
@@ -146,8 +145,10 @@ a:hover {
   background-color: #393E46;
 }
 
-.skills div {
-  text-align: left;
+@media (max-width: 1050px) {
+  .skills div {
+    text-align: left;
+  }
 }
 
 .projects {

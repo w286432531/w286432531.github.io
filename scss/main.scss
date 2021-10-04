@@ -64,7 +64,6 @@ a {
 .introduction {
     height: 20%;
     color: $color3;
-    text-align: center;
     background-color: $color1;
 }
 .grid-3 {
@@ -112,7 +111,9 @@ a {
 .skills {
     background-color: $color1;
     & div {
-        text-align: left;
+        @include tablet{
+            text-align: left;
+        }
     }
 }
 .projects {
