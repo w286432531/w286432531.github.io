@@ -101,6 +101,7 @@ a {
     .profile-pic img {
         width: 300px;
         margin: auto;
+        border-radius: 50%;
     }
     .summary {
     margin: auto;
@@ -111,6 +112,7 @@ a {
 .skills {
     background-color: $color1;
     & div {
+        color: $color3;
         @include tablet{
             text-align: left;
         }

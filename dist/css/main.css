@@ -134,6 +134,7 @@ a:hover {
 .about-me .profile-pic img {
   width: 300px;
   margin: auto;
+  border-radius: 50%;
 }
 
 .about-me .summary {
@@ -143,6 +144,10 @@ a:hover {
 
 .skills {
   background-color: #393E46;
+}
+
+.skills div {
+  color: #D7E9F7;
 }
 
 @media (max-width: 1050px) {
